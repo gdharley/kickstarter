@@ -1,0 +1,176 @@
+/* Modern Wizard Layout Styles */
+
+body, html {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background: #f4f8fd;
+  margin: 0;
+  padding: 0;
+}
+
+.wizard-nav {
+  width: 260px;
+  background: #e3eefe;
+  color: #232946;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem 2rem 1rem;
+  box-shadow: 2px 0 12px #0001;
+  min-height: 100vh;
+  height: 100vh;
+  border-right: 2px solid #eebbc3;
+}
+
+.wizard-nav ol {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.wizard-nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 2rem 0 1.5rem 0;
+.wizard-nav-logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  background: #fff;
+  padding: 1.5rem 0;
+  border-radius: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.wizard-nav-logo img {
+  width: 80%;
+  max-width: 160px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.wizard-nav-logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: #eebbc3;
+}
+.wizard-nav-logo span {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #232946;
+  letter-spacing: 0.01em;
+}
+
+.wizard-nav h2 {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.01em;
+  color: #232946;
+  font-weight: 600;
+}
+
+.wizard-nav button {
+  transition: background 0.2s, color 0.2s;
+}
+.wizard-nav button:hover {
+  background: #eebbc3;
+  color: #232946;
+}
+.wizard-nav button:active {
+  background: #ffd6e0;
+  color: #232946;
+}
+
+.wizard-main {
+  flex: 1;
+  padding: 3rem 2rem;
+  background: #f4f8fd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wizard-step-panel {
+  max-width: 600px;
+  width: 100%;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 32px #0002;
+  padding: 2.5rem 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  animation: fadeIn 0.4s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: none; }
+}
+
+.wizard-step-option {
+  margin-bottom: 18px;
+  padding: 14px 16px;
+  border: 1.5px solid #eebbc3;
+  border-radius: 10px;
+  background: #f3f3f3;
+  transition: border 0.2s, background 0.2s;
+}
+.wizard-step-option.selected {
+  border: 2.5px solid #eebbc3;
+  background: #ffe5ec;
+}
+.wizard-step-option:hover {
+  border: 2px solid #eebbc3;
+  background: #f9e6ef;
+}
+
+.wizard-step-panel h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.wizard-step-panel p {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.wizard-step-panel button {
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+.wizard-step-panel button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.wizard-step-panel button:not(:disabled):hover {
+  background: #232946;
+  color: #fff;
+}
+
+.wizard-step-panel .export-controls button,
+.wizard-step-panel .export-controls label {
+  margin-right: 8px;
+  margin-bottom: 0;
+  font-size: 0.98rem;
+  border-radius: 6px;
+  border: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  background: #eebbc3;
+  color: #232946;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.wizard-step-panel .export-controls button:hover,
+.wizard-step-panel .export-controls label:hover {
+  background: #ffd6e0;
+  color: #232946;
+}
+
+}
