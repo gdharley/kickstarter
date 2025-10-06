@@ -15,7 +15,7 @@ export const wizardConfig = [
   {
     id: 'platform-strategy',
     title: 'Platform Strategy',
-    description: 'How will <span style="color: #e74c3c">Flowable</span> be used in your environment?',
+  description: 'How will <span class="text-accent">Flowable</span> be used in your environment?',
     type: 'single-select',
     options: [
       {

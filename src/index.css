@@ -3,9 +3,32 @@
   line-height: 1.5;
   font-weight: 400;
 
+  /* Theme / palette variables (centralized) */
+  --bg: #f4f8fd;
+  --panel-bg: #ffffff;
+  --nav-bg: #e3eefe;
+  --accent: #eebbc3;
+  --accent-2: #ffe5ec;
+  --accent-3: #f9e6ef;
+  --primary: #4A7BE9;
+  --on-primary: #ffffff;
+  --text: #232946;
+  --muted: #555555;
+  --muted-bg: #f3f3f3;
+  --shadow-1: rgba(0,0,0,0.02);
+  --shadow-2: rgba(0,0,0,0.12);
+  --nav-border: rgba(191,199,248,0.4);
+  --nav-shadow: rgba(0,0,0,0.04);
+  --panel-border: rgba(227,238,254,0.8);
+  --link: #646cff;
+  --link-hover: #535bf2;
+  --button-bg: #1a1a1a;
+  --page-bg: var(--bg);
+  --page-text: var(--text);
+
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: var(--page-text);
+  background-color: var(--page-bg);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,11 +38,11 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: var(--link);
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: var(--link-hover);
 }
 
 body {
@@ -42,12 +65,12 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: var(--button-bg);
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: var(--link-hover);
 }
 button:focus,
 button:focus-visible {
@@ -56,13 +79,10 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+    /* Light-mode overrides */
+    --page-text: #213547;
+    --page-bg: #ffffff;
+    --link-hover: #747bff;
+    --button-bg: #f9f9f9;
   }
 }

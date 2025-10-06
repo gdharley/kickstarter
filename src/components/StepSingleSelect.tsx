@@ -16,10 +16,14 @@ type StepSingleSelectProps = {
 
 const StepSingleSelect: React.FC<StepSingleSelectProps> = ({ stepId, description, options, answer, handleSelect }) => (
   <>
-    <p style={{ color: '#555', marginBottom: 24 }}>{description}</p>
+    <p className="text-muted" style={{ marginBottom: 24 }}>{description}</p>
     <div>
       {options.map((opt) => (
-        <label key={opt.value} style={{ display: 'block', marginBottom: 18, padding: 12, border: answer === opt.value ? '2px solid #eebbc3' : '1px solid #eebbc3', borderRadius: 8, background: answer === opt.value ? '#ffe5ec' : '#f3f3f3', cursor: 'pointer', transition: 'all 0.2s' }}>
+        <label
+          key={opt.value}
+          className={`wizard-step-option ${answer === opt.value ? 'selected' : ''}`}
+          style={{ display: 'block', marginBottom: 18, padding: 12, borderRadius: 8, cursor: 'pointer', transition: 'all 0.2s' }}
+        >
           <input
             type="radio"
             name={stepId}
@@ -29,7 +33,7 @@ const StepSingleSelect: React.FC<StepSingleSelectProps> = ({ stepId, description
             style={{ marginRight: 12 }}
           />
           <strong>{opt.label}</strong>
-          <div style={{ color: '#666', fontSize: 14, marginTop: 4 }}>{opt.description}</div>
+          <div className="text-muted" style={{ fontSize: 14, marginTop: 4 }}>{opt.description}</div>
         </label>
       ))}
     </div>
