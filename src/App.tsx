@@ -134,7 +134,7 @@ function App() {
         <div className="wizard-nav-logo">
           <img src="/flowable.jpg" alt="Wizard Logo" />
         </div>
-  <h2 style={{ textAlign: 'center', fontSize: '1.5rem', fontWeight: 700, margin: '0 0 2rem 0', letterSpacing: '0.01em' }}>Wizard Steps</h2>
+  <h2 style={{ textAlign: 'center', fontSize: '1.5rem', fontWeight: 700, margin: '0 0 2rem 0', letterSpacing: '0.01em' }}>Kickstart Steps</h2>
   <ol style={{ listStyle: 'none', padding: 0, margin: 0, flex: 1, overflowY: 'auto' }}>
           {wizardConfig.map((s: WizardStep, idx: number) => {
             // Hide Infrastructure step unless deployment type is on-premise
@@ -159,7 +159,7 @@ function App() {
                 >
                   {s.title}
                   {isCompleted && s.type !== 'info' && s.type !== 'summary' && (
-                    <span style={{ float: 'right', fontSize: 13, fontWeight: 500 }} className="text-primary">
+                    <span style={{ float: 'right', fontSize: 20, fontWeight: 500 }} className="text-primary">
                       ✓
                     </span>
                   )}

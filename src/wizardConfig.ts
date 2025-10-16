@@ -5,7 +5,7 @@ export const wizardConfig = [
   {
     id: 'introduction',
     title: 'Introduction',
-    description: 'Welcome to the Process Automation Wizard. This tool will guide you through a series of questions to collect technical and platform requirements for your automation project. You can import a previous session to continue where you left off.',
+    description: 'Welcome to the Process Automation Kickstart Wizard. This tool will guide you through a series of questions to collect technical and platform requirements for your automation project. You can import a previous session to continue where you left off.',
     type: 'info',
     options: [],
     resources: [
