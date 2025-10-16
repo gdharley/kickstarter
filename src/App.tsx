@@ -132,7 +132,7 @@ function App() {
       {/* Left Navigation */}
   <nav className="wizard-nav nav-fixed nav-width">
         <div className="wizard-nav-logo">
-          <img src="/logo-250x150.svg" alt="Wizard Logo" />
+          <img src="/flowable.jpg" alt="Wizard Logo" />
         </div>
   <h2 style={{ textAlign: 'center', fontSize: '1.5rem', fontWeight: 700, margin: '0 0 2rem 0', letterSpacing: '0.01em' }}>Kickstart Steps</h2>
   <ol style={{ listStyle: 'none', padding: 0, margin: 0, flex: 1, overflowY: 'auto' }}>
